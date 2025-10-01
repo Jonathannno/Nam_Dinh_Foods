@@ -1,16 +1,42 @@
 <html>
   <head>
-    <title>WELCOME TO NINH BINH "NAM DINH."</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  <title>WELCOME TO NINH BINH "NAM DINH."</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    div {
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+
+    /* Mobile-friendly tweaks */
+    @media (max-width: 768px) {
+      div[style*="display: flex"] {
+        flex-direction: column;
+        align-items: center;
+      }
+      div[style*="display: flex"] img,
+      div[style*="display: flex"] div {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
   <body>
+
+
     <h1 style="color: blue; font-family: Arial; font-style: italic; font-size: 85px;">
       Introductory to Nam Dinh's most famous dishes and cuisines.
     </h1>
 <div style="display: flex; justify-content: center; gap: 20px; margin: 40px 0;">
-  <img src="NamDinhPics/NamDinhcity.jpg" alt="NamDinhcity" style="width: 48%; border-radius: 10px; object-fit: cover;">
-  <img src="NamDinhPics/TranHungDao_statue.jpg" alt="TranHungDao_statue" style="width: 48%; border-radius: 10px; object-fit: cover;">
+  <img src="NamDinhPics/NamDinhcity.jpg" alt="NamDinhcity" style="width: 48%;  max-width: 400px; border-radius: 10px; object-fit: cover;">
+  <img src="NamDinhPics/TranHungDao_statue.jpg" alt="TranHungDao_statue" style="width: 48%;  max-width: 400px; border-radius: 10px; object-fit: cover;">
 </div>
 
     <h2 style="color: darkcyan; font-family: Arial; font-style: italic; font-size: 62px;">
@@ -165,5 +191,6 @@ Qua bàn tay khéo léo của người thợ, nặn bánh thành từng viên tr
   </p>
 </footer>
 
+    
   </body>
 </html>
